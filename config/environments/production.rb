@@ -11,7 +11,6 @@ Rails.application.configure do
   config.action_cable.mount_path = '/cable'
   config.action_cable.url = 'wss://immense-sierra-76225.herokuapp.com/cable'
   config.action_cable.allowed_request_origins = [ 'https://hungry-almeida-7d9632.netlify.app', /http:\/\/hungry-almeida-7d9632.netlify.app*/ ]
-  config.action_cable.disable_request_forgery_protection = true
   
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
