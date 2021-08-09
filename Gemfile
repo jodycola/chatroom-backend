@@ -10,7 +10,7 @@ gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~>4.0'
+gem 'redis', '~>3.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
