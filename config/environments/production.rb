@@ -7,9 +7,10 @@ Rails.application.configure do
   config.cache_classes = true
 
   # Action cable connection configs
+  config.web_socket_server_url = 'wss://immense-sierra-76225.herokuapp.com/cable'
   config.action_cable.mount_path = '/cable'
-  config.action_cable.url = 'wss://localhost:3000/cable'
-  config.action_cable.allowed_request_origins = [ /http:\/\/localhost:*/ ]
+  config.action_cable.url = 'wss://immense-sierra-76225.herokuapp.com/cable'
+  config.action_cable.allowed_request_origins = [ 'https://localhost:3000', /http:\/\/localhost:3000.*/, 'https://hungry-almeida-7d9632.netlify.app', /http:\/\/hungry-almeida-7d9632.netlify.app*/ ]
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
