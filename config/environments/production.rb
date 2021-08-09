@@ -10,8 +10,16 @@ Rails.application.configure do
   config.web_socket_server_url = 'wss://immense-sierra-76225.herokuapp.com/cable'
   config.action_cable.mount_path = '/cable'
   config.action_cable.url = 'wss://immense-sierra-76225.herokuapp.com/cable'
-  config.action_cable.allowed_request_origins = [ 'https://localhost:3000', /http:\/\/localhost:3000.*/, 'https://hungry-almeida-7d9632.netlify.app', /http:\/\/hungry-almeida-7d9632.netlify.app*/ ]
+  config.action_cable.allowed_request_origins = [ 'https://hungry-almeida-7d9632.netlify.app', /http:\/\/hungry-almeida-7d9632.netlify.app*/ ]
+  config.action_cable.disable_request_forgery_protection = true
 
+  hostname = ENV.fetch('HOSTNAME')
+  port = ENV.fetch('PORT')
+  base_url = "#{hostname}:#{port}"
+
+  config.action_cable.url = "wss://#{hostname}/cable"
+  config.action_cable.allowed_request_origins = ["https://#{base_url}", "https://#{hostname}"]
+  
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
