@@ -7,9 +7,9 @@ Rails.application.configure do
   config.cache_classes = true
 
   # Action cable connection configs
-  # config.action_cable.mount_path = '/cable'
-  # config.action_cable.url = 'wss://parley-backend.herokuapp.com/cable'
-  # config.action_cable.allowed_request_origins = [ 'https://parley-backend.herokuapp.com/', /http:\/\/parley-backend.herokuapp.com.*/ ]
+  config.action_cable.mount_path = '/cable'
+  config.action_cable.url = 'wss://parley-backend.herokuapp.com/cable'
+  config.action_cable.allowed_request_origins = [ 'https://parley-backend.herokuapp.com/', /http:\/\/parley-backend.herokuapp.com.*/ ]
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
