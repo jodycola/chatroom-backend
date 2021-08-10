@@ -7,11 +7,10 @@ Rails.application.configure do
   config.cache_classes = true
 
   # Action cable connection configs
-  config.web_socket_server_url = 'wss://immense-sierra-76225.herokuapp.com/cable'
   config.action_cable.mount_path = '/cable'
-  config.action_cable.url = 'wss://immense-sierra-76225.herokuapp.com/cable'
-  config.action_cable.allowed_request_origins = [ 'https://localhost:3000', /http:\/\/localhost:3000.*/, 'https:/hungry-almeida-7d9632.netlify.app', /http:\/\/hungry-almeida-7d9632.netlify.app*/ ]
-  
+  config.action_cable.url = 'wss://parley-backend.herokuapp.com/cable'
+  config.action_cable.allowed_request_origins = [ 'https://parley-backend.herokuapp.com/', /http:\/\/parley-backend.herokuapp.com.*/ ]
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
@@ -19,8 +18,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  # set to true for troubleshooting
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
