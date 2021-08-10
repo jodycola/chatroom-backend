@@ -111,10 +111,8 @@ GEM
     mini_mime (1.1.0)
     minitest (5.14.4)
     msgpack (1.4.2)
-    nio4r (2.5.7)
-    nokogiri (1.12.0-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.12.0-x86_64-linux)
+    nio4r (2.5.8)
+    nokogiri (1.12.3-x86_64-darwin)
       racc (~> 1.4)
     pg (1.2.3)
     pry (0.13.1)
@@ -218,7 +216,6 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
@@ -235,7 +232,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-cors
   rack-mini-profiler (~> 2.0)
-  rails (~> 6.1.4)
+  rails (~> 6.1.3)
   redis (~> 3.2)
   sass-rails (>= 6)
   selenium-webdriver
