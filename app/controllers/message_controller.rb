@@ -8,8 +8,8 @@ class MessageController < ApplicationController
     def add
         @message = Message.create(
             body: params[:message],
-            user_id: params[:currentUser][:id],
-            room_id: params[:currentRoom][:id]
+            user_id: params[:user][:id],
+            room_id: params[:room][:id]
         )
         if @message.save
             RoomChannel.broadcast_to(@message.room, {
