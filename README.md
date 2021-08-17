@@ -1,5 +1,8 @@
 # README
 
+[Link to frontend](https://github.com/jodycola/chatroom-frontend)
+[Link to root](https://github.com/jodycola/Let-s-Chat)
+
 ## How to start
 
 Currently the deployment of this application is in the works so to run this properly it must be done locally
