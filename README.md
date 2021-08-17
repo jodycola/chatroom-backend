@@ -4,7 +4,7 @@
 
 ## How to start
 
-Currently the deployment of this application is in the works so to run this properly it must be done locally
+Currently the deployment of this application is in the works so to run this properly it must run locally
 
 - Clone this repo and `cd` into the root directory
 - `bundle install` will install all the proper dependencies and create a Gemfile if one is not already there
