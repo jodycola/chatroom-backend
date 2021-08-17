@@ -1,7 +1,7 @@
 # README
 
-[Link to frontend](https://github.com/jodycola/chatroom-frontend)
-[Link to root](https://github.com/jodycola/Let-s-Chat)
+[Frontend](https://github.com/jodycola/chatroom-frontend),
+[Root](https://github.com/jodycola/Let-s-Chat)
 
 ## How to start
 
