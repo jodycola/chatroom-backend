@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to start
 
-Things you may want to cover:
+Currently the deployment of this application is in the works so to run this properly it must be done locally
 
-* Ruby version
+- Clone this repo and `cd` into the root directory
+- `bundle install` will install all the proper dependencies and create a Gemfile if one is not already there
+- `rails db:migrate` and `rails db:seed`
+- `rails s` will run the server
 
-* System dependencies
+## Sign-in as Guest
 
-* Configuration
+After seeding the API you will have access to the Guest account. The Guest account was made with the intention of testing the application  
 
-* Database creation
+THe login for this account is:  
+name: "Guest"  
+password: "aaa"
 
-* Database initialization
+## Technologies
 
-* How to run the test suite
+[Action Cable](https://guides.rubyonrails.org/action_cable_overview.html), 
+[Rails](https://guides.rubyonrails.org/index.html)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
